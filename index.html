@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="./css/style.css">
@@ -26,10 +26,13 @@
         </nav>
       
             <ul class="nav-contacts">
-            <li class="contacts-list"><svg>
-             
-            </svg><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a></li>
-            <li class="contacts-list"><a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a></li>
+            <li class="contacts-list"><svg width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+            </svg>
+                      <a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a></li>
+            <li class="contacts-list"><svg width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+            </svg><a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a></li>
         </ul>
         </div>
     </header>
@@ -37,28 +40,33 @@
     <main>
         <!-- герой -->
         <section class="hero section">
+           
                 <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class ="btn"> Заказать услугу</button>
         </section>
 <section class="section">
       <!-- скрытый заголовок -->
      <h2 class="second-title visually-hidden">Наши преимущества</h2>
-     <div class="container"> <ul class="list ">
-         <li class="list-list-container"><h3 class="title-list">Внимание к деталям</h3>
+     <div class="container"> <ul class="list">
+         <li class="list-list-container">
+             <svg viewBox="0 0 70 70"><use href="./images/symbol-defs.svg#icon-antenna-1"></use></svg><h3 class="title-list">Внимание к деталям</h3>
              <p class="item">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
          </li>
-         <li class="list-list-container"><h3 class="title-list">Пунктуальность</h3>
+         <li class="list-list-container">
+             <svg viewBox="0 0 70 70"><use href="./images/symbol-defs.svg#icon-clock-1"></use></svg><h3 class="title-list">Пунктуальность</h3>
              <p class="item">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
          </li>
-         <li class="list-list-container"><h3 class="title-list">Планирование</h3>
+         <li class="list-list-container"> 
+             <svg viewBox="0 0 70 70"><use href="./images/symbol-defs.svg#icon-diagram-1"></use></svg><h3 class="title-list">Планирование</h3>
              <p class="item">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
          </li>
-         <li class="list-list-container"><h3 class="title-list">Современные технологии</h3>
+         <li class="list-list-container">
+             <svg viewBox="0 0 70 70"><use href="./images/symbol-defs.svg#icon-astronaut-1"></use></svg><h3 class="title-list">Современные технологии</h3>
              <p class="item">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
          </li>
      </ul></div>
  </section>
-   <section class="section about"> <h3 class="about-title">Чем мы занимаемся</h3>
+   <section class="section about"><h3 class="about-title">Чем мы занимаемся</h3>
         <ul class="images container">
             <li class="images-list-images"><img src="./images/computer.jpg" alt="computer" width="370"></li>
             <li class="images-list-images"><img src="./images/phone.jpg" alt="phone" width="370"></li>
@@ -72,7 +80,13 @@
                    <ul сlass="container-team">
                     <div class="card"><li class="team-number"><a href="team-link"><img src="./images/demianenko.jpg" alt="demianenko" width="270" height="260">
                         <div class="person-proffesion"><h3 class="person">Игорь Демьяненко</h3>
-                            <p class="proffesion">Product Designer</p></div></a>
+                            <p class="proffesion">Product Designer</p>
+                        <div class="social-icons">
+                            <svg width="20" height="20"><use href="./images/symbol-defs.svg#icon-instagram-2"></use></svg>
+                            <svg width="20" height="20"><use href="./images/symbol-defs.svg#icon-twitter-1"></use></svg>
+                            <svg width="20" height="20"><use href="./images/symbol-defs.svg#icon-facebook-1"></use></svg>
+                            <svg width="20" height="20"><use href="./images/symbol-defs.svg#icon-linkedin-1"></use></svg>
+                        </div></div></a>
                                         </li></div>
                     <div class="card"><li class="team-number"><a href="team-link"><img src="./images/repina.jpg" alt="repina" width="270">
                        <div class="person-proffesion"> <h3 class="person">Ольга Репина</h3>
@@ -91,6 +105,19 @@
                 </li></div>
             </ul></div>  
         </section>
+        <section class="section">
+            <h2 class="about-title">Постоянные клиенты</h2>
+            <div class="container client">
+                <div class="client-box">
+                <svg viewBox="0 0 106 60"><use href ="./images/symbol-defs.svg#icon-Logo"></use></svg></div>
+                <div class="client-box"><svg viewBox="0 0 106 60"><use href ="./images/symbol-defs.svg#icon-Logo-1"></use></svg></div>
+                <div class="client-box"><svg viewBox="0 0 106 60"><use href ="./images/symbol-defs.svg#icon-Logo-2"></use></svg></div>
+                <div class="client-box"><svg viewBox="0 0 106 60"><use href ="./images/symbol-defs.svg#icon-Logo-3"></use></svg></div>
+                <div class="client-box"><svg viewBox="0 0 106 60"><use href ="./images/symbol-defs.svg#icon-Logo-4"></use></svg></div>
+                <div class="client-box"><svg viewBox="0 0 106 60"><use href ="./images/symbol-defs.svg#icon-Logo-5"></use></svg></div>
+
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer container">
@@ -99,7 +126,12 @@
             <ul class="footer-address">
                 <li><a href="mailto:info@example.com" class="contacts-footer">info@example.com</a></li>
                 <li><a href="tel:+380991111111" class="contacts-footer">+38 099 111 11 11</a></li>
-            </ul></div>
+            </ul><div class="social-icons">
+                <svg width="20" height="20"><use href="./images/symbol-defs.svg#icon-instagram-2"></use></svg>
+                <svg width="20" height="20"><use href="./images/symbol-defs.svg#icon-twitter-1"></use></svg>
+                <svg width="20" height="20"><use href="./images/symbol-defs.svg#icon-facebook-1"></use></svg>
+                <svg width="20" height="20"><use href="./images/symbol-defs.svg#icon-linkedin-1"></use></svg>
+            </div></div>
     </footer>
 </body>
 </html>

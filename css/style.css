@@ -162,6 +162,11 @@ img{
     background: #2F303A;
     text-align: center;
 }
+.background-hero{
+    max-width: 1600px;
+    background: rgba(47, 48, 58, 0.4);
+    
+}
 .main-title{
     text-align: center;
     text-transform: uppercase;
@@ -210,8 +215,15 @@ img{
 
 }
 .list-list-container {
-    width: 270px; 
+    width: 270px;
+    height: 120px; 
+    background: #F5F4FA;
+    border-radius: 4px;
+    
+}.list-list-container>svg{
+    padding: 25px 100px;
 }
+
 .list-list-container +.list-list-container{
     margin-left: 30px;
 }
@@ -220,9 +232,9 @@ img{
     font-weight: bold;
     font-size: 14px;
     line-height: 114%;
+    margin-top: 30px;
 }
 .item{
-   
     font-size: 14px;
     line-height:171%;
     margin-top: 10px;
@@ -232,9 +244,7 @@ img{
 .section.team{
     background:#F5F4FA;;
 }
-.about{
-    padding-top: 0;
-}
+
 .about-title{
     font-weight: bold;
     font-size: 36px;
@@ -280,10 +290,36 @@ text-align: center;
     margin-top: 10px;
     
 }
+.client-box{
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+
+    border-radius: 4px;
+    cursor:pointer;
+}
+.client-box:hover,
+.client-box:focus{
+    
+}
+.client-box+.client-box{
+    margin-left:30px;
+}
+.client-box>svg{
+    padding: 16px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.client-box>svg+svg{
+    padding: 16px 32px;
+ }
 
 /*________________ portfolio -main*/
 .button-section{
-   padding-top: 94px;
+    padding-top: 94px;
     padding-bottom: 50px;
 }
 .button-button{
@@ -301,9 +337,6 @@ text-align: center;
     flex-wrap: wrap;
     margin: -15px;
 }
-
-    /* border-bottom: 1px solid #eeeeee; */
-    /* border: 1px solid #EEEEEE */
 
 .card-full{
     justify-content: center;
@@ -330,7 +363,6 @@ text-align: center;
  .cards{
      padding-top: 0px;
  }
-
 
 
 
