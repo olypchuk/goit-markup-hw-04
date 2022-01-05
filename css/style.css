@@ -59,6 +59,7 @@ img{
     background-color:var(--backgroundcolor) ;
 }
 
+
 .container{
     display: flex;
     width: 1200px;
@@ -72,9 +73,9 @@ img{
     padding-right: 15px;
 }
 .nav-list{
-   display: flex;
+    display: flex;
     flex-direction:row;
-    
+    position: relative;
     margin-left: 93px;
 }
 .list-item{
@@ -86,6 +87,17 @@ img{
 .list-item:first-child{
     margin-left: 0;
     padding-left: 0;
+}
+.nav.list-item.studio:first-child::after,
+.nav.list-item.portfolio::after{
+    position: absolute;
+    bottom: 0;
+    content: '';
+    width: 48px;
+    height: 4px;
+    background-color:var(--accentcolor);
+    border-radius: 2px;
+
 }
 
 .nav-contacts{
@@ -125,36 +137,39 @@ img{
     color: var(--accentcolor);
 }
 .nav-contacts{
+
     margin-top: 32px;
     margin-bottom: 32px;
+  
 }
 .contacts{
+    display:flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 114%;
     color:var(--maincolor);
     
 }
-
-.contacts-list>svg{
+.contacts>svg{
     margin-right: 10px;
-    
 }
 .contacts-list:hover,
 .contacts-list:focus{
     fill:var(--accentcolor);
 }
-
-
 .contacts-list{
     margin-left: 0px;
+    align-items: baseline;
+
 }
-.contacts-list a{
-    padding: 32px 0;
-}
+
 .contacts-list:last-child{
-    margin-left: 50px;}
-  
+    margin-left: 50px;
+   
+}
+
+
 .contacts:hover,
 .contacts:focus{
     color:var(--accentcolor);
@@ -178,7 +193,7 @@ img{
     height:600px;
     max-width: 1600px;
    
-    background: rgba(47, 48, 58, 0.4);
+    background:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)) ;
     background-image:url('../images/Img\ Overlay.png'),url('../images/background-image.png');
 
     margin: auto;
@@ -385,6 +400,11 @@ img{
 }
 .button.portfolio{
     padding: 6px 22px;
+
+}
+.button.portfolio:hover,
+.button.portfolio:focus{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-button.list>li:not(:first-child){
     margin-left: 8px;
@@ -393,13 +413,18 @@ img{
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+    
 }
 
 .card-full{
     justify-content: center;
     margin: 15px;
     outline: 1px solid #EEEEEE ;
+ 
 }
+.card-full:hover,
+.card-full:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
 .filter-title{
     padding: 20px 24px;
     
@@ -428,8 +453,9 @@ img{
    background: #2F303A;
 }
 .footer.container{
+    display: flex;
     padding: 60px 0 60px ;
-    flex-direction: column;
+    
     align-items: stretch;
 
 }
@@ -464,12 +490,13 @@ img{
     color: var(--backgroundcolor);
     text-decoration: none;
  }
- .footer-contacts{
-
- }
+ 
  .foot{
+    display: flex;
     background: rgba(255, 255, 255, 0.1);
     cursor: pointer;
+   
+    
  }
  .button{
     font-weight: 500;
@@ -490,18 +517,28 @@ img{
      color: var(--backgroundcolor);
      background-color:var(--accentcolor) ;
  }
- .social-icons{
-     display: flex;
- }
+
  .foot-title{
+    display:flex;
+    flex-direction: column;
+    margin-left: 70px;
+    padding-top: 10px;
+      
+}
+.foot-title-foot{
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: #FFFFFF;
 }
- 
 
- 
+
+.social-icons.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+    
+} 
