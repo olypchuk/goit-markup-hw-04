@@ -149,6 +149,7 @@ img{
     font-size: 14px;
     line-height: 114%;
     color:var(--maincolor);
+    fill:#757575;
     
 }
 .contacts>svg{
@@ -173,6 +174,7 @@ img{
 .contacts:hover,
 .contacts:focus{
     color:var(--accentcolor);
+    fill: currentColor;
 }
 
 /* hero */
@@ -329,7 +331,6 @@ img{
 .social-icons{
     display: flex;
     justify-content: center;
-
 }
 
 .social-icon{
