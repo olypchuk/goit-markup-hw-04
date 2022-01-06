@@ -252,11 +252,12 @@ img{
 .list-list-container {
     width: 270px;
     
-    background: #F5F4FA;
+    
     border-radius: 4px;
 }
 .title-list-item>svg{
     padding: 25px 100px;
+    background: #F5F4FA;
 }
 
 .list-list-container +.list-list-container{
@@ -496,6 +497,7 @@ img{
     display: flex;
     background: rgba(255, 255, 255, 0.1);
     cursor: pointer;
+    fill: #FFFFFF;
    
     
  }
